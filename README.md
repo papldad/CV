@@ -1,1 +1,1 @@
-# https://papldad.github.io/rsschool-cv/cv
+# link to CV - https://papldad.github.io/CV/
