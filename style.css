@@ -4,7 +4,7 @@
 	--bgGrayLightShadow: #CCCCCC;
 	--bgGrayDark: #2C2D31;
 	--colorLogo: #7474A6;
-	--colorName: #7474A6;
+	--colorName: #FCE181;
 	--colorText: #2A3038;
 	--colorTextLink: #FCE181;
 }
@@ -95,7 +95,7 @@ footer {
 }
 
 .contentMainRight {
-
+	
 }
 
 .contentMainText {
@@ -149,45 +149,67 @@ footer {
 }
 
 .ul li {
+	transition: all 1s;
+	padding: 5px 0;
 	border-bottom: 2px var(--bgGrayLight) solid;
 }
 
 .ul li:hover {
-	transition: all 1s;
 	border-bottom: 2px var(--colorLogo) solid;
 }
 
 .ul a  {
+	transition: all 1s;
 	text-decoration: none;
 }
 
 .ul a li:hover  {
-	transition: all 1s;
 	border-bottom: 2px var(--colorTextLink) solid;
 }
 
-.contentMainCard {
+.parMainName {
+	padding: 5%;
+	background-color: var(--bgGrayDark);
 
-
-	/*border: 2px blue solid;*/
+	/*border: 2px red solid;*/
 }
 
 .nameText {
-	font-size: 8vh;
+	font-size: 2em;
 	font-weight: 900;
 	line-height: normal;
 	letter-spacing: normal;
 	text-transform: uppercase;
+	text-align: center;
 	color: var(--colorName);
 }
 
+.contentMainTextFlex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .avatarPic {
-	width: 200px;
-	height: 200px;
+	width: 5em;
+	height: 5em;
 
 	background-color: var(--bgGrayDark);
 	border: 0.2em var(--bgGrayDark) solid;
 	border-radius: 50%;
+	transition: all 1s;
+
+}
+
+.avatarPic:hover {
+	width: 15em;
+	height: 15em;
+	border-radius: 5%;
+	border-color: var(--colorName);
+}
+
+.avatarPic:hover #idAvatar {
+	border-radius: 5%;
 }
 
 #idAvatar {
@@ -195,15 +217,12 @@ footer {
 	height: 100%;
 
 	border-radius: 50%;
+	transition: all 1s;
 }
 
 /*@MEDIA - width < 1000px*/
 
 @media all and (max-width: 1000px) {
-
-	* {
-
-	}
 
 	.containerHeader {
 		display: flex;
@@ -239,6 +258,20 @@ footer {
 
 	.ul li {
 		padding: 15px 0;
+		border-color: var(--bgGrayLightShadow);
+		transition: all 0s;
 	}
+
+	.avatarPic {
+		width: 15em;
+		height: 15em;
+		border-radius: 5%;
+		border-color: var(--colorName);
+	}
+
+	.avatarPic #idAvatar {
+		border-radius: 5%;
+	}
+
 
 }
