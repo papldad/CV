@@ -1,0 +1,164 @@
+:root {
+	/*COLOR*/
+	--bgGrayLight: #D8D8D8;
+	--bgGrayDark: #2C2D31;
+	--colorLogo: #7474A6;
+	--colorName: #7474A6;
+	--colorText: #2A3038;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 100vw;
+	min-height: 100vh;
+
+	font-family: "Inter", sans-serif;
+	font-size: 1em;
+	color: var(--colorText);
+
+	background-color: var(--bgGrayLight);
+}
+
+.contentBody {
+	width: inherit;
+	min-height: inherit;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 10vh 8fr 10vh;
+}
+
+header {
+	background-color: var(--bgGrayDark);
+
+	/*border: 2px red solid;*/
+}
+
+main {
+}
+
+footer {
+	background-color: var(--bgGrayDark);
+}
+
+.container {
+	max-width: 1440px;
+	width: inherit;
+	margin: 0 auto;
+}
+
+.containerHeader {
+	min-height: 100%;
+	position: relative;
+}
+
+.containerHeader > .logoText {
+	position: absolute;
+	top: 0;
+	left: 5%;
+
+	font-size: 13vh;
+	font-weight: 900;
+	color: var(--colorLogo);
+	/*border: 2px red solid;*/
+}
+
+.containerMain {
+	min-height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.contentMain {
+	flex-basis: 50%;
+	margin-top: 2.25em;
+
+	
+
+	/*border: 2px blue solid;*/
+}
+
+.contentMainLeft {
+	
+}
+
+.contentMainRight {
+
+}
+
+.contentMainText {
+	padding: 0 2.5% 5%;
+
+	/*border: 2px blue solid;*/
+}
+
+.headerMainText {
+	margin-left: 10%;
+	margin-right: 2.5%;
+	padding: 5px 10px;
+
+	font-size: 1.5em;
+	font-weight: 900;
+	color: var(--bgGrayLight);
+	border-radius: 5%;
+	background-color: var(--bgGrayDark);
+
+	/*border: 2px red solid;*/
+}
+
+.parMainText {
+	/*border: 2px green solid;*/
+}
+
+.contentMainCard {
+
+
+	/*border: 2px blue solid;*/
+}
+
+.nameText {
+	font-size: 8vh;
+	font-weight: 900;
+	color: var(--colorName);
+}
+
+.avatarPic {
+	width: 200px;
+	height: 200px;
+
+	background-color: var(--bgGrayDark);
+	border: 0.2em var(--bgGrayDark) solid;
+	border-radius: 50%;
+}
+
+#idAvatar {
+	width: 100%;
+	height: 100%;
+
+	border-radius: 50%;
+}
+
+/*@MEDIA - width < 1000px*/
+
+@media all and (max-width: 1000px) {
+
+	.containerHeader {
+		display: flex;
+		justify-content: center;
+	}
+
+	.containerHeader .logoText {
+		position: static;
+		left: 0;
+	}
+
+	.containerMain {
+		flex-direction: column-reverse;
+	}
+
+}
