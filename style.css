@@ -244,6 +244,8 @@ footer {
 	.containerHeader .logoText {
 		position: static;
 		left: 0;
+
+		font-size: 6vh;
 	}
 
 	.containerMain {
