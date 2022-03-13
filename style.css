@@ -79,6 +79,7 @@ footer {
 	min-height: 100%;
 	display: flex;
 	flex-direction: row;
+	
 }
 
 .contentMain {
@@ -95,7 +96,7 @@ footer {
 }
 
 .contentMainRight {
-	
+
 }
 
 .contentMainText {
@@ -170,8 +171,6 @@ footer {
 .parMainName {
 	padding: 5%;
 	background-color: var(--bgGrayDark);
-
-	/*border: 2px red solid;*/
 }
 
 .nameText {
@@ -184,13 +183,26 @@ footer {
 	color: var(--colorName);
 }
 
+.nameTextLine {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: var(--bgGrayDark);
+	transition: all 1s;
+}
+
+.parMainName:hover .nameTextLine {
+	background-color: var(--colorName);
+}
+
 .contentMainTextFlex {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: stretch;
 }
 
 .avatarPic {
+	margin: 0 auto;
 	width: 5em;
 	height: 5em;
 
@@ -256,10 +268,15 @@ footer {
 		transition: all 0s;
 	}
 
+
 	.ul li {
 		padding: 15px 0;
 		border-color: var(--bgGrayLightShadow);
 		transition: all 0s;
+	}
+
+	.nameTextLine {
+		display: none;
 	}
 
 	.avatarPic {
