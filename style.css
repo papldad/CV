@@ -159,14 +159,18 @@ footer {
 	border-bottom: 2px var(--colorLogo) solid;
 }
 
-.ul a  {
+.ul li a {
+	display: block;
+	color: initial;
 	transition: all 1s;
 	text-decoration: none;
 }
 
-.ul a li:hover  {
-	border-bottom: 2px var(--colorTextLink) solid;
+.ul li a:hover {
+	padding-left: 10px;
+	color: var(--colorLogo);
 }
+
 
 .parMainName {
 	padding: 5%;
